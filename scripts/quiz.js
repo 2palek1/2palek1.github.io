@@ -31,15 +31,15 @@ const quizData = [
     }
 ];
 
-var currentQuestion = 0;
-var score = 0;
+let currentQuestion = 0;
+let score = 0;
 
 function displayQuestion() {
-    var question = quizData[currentQuestion];
+    let question = quizData[currentQuestion];
     document.getElementById("question-number").textContent = currentQuestion + 1 + "/6"
     document.getElementById("question").textContent = question.question;
 
-    var optionsHTML = "";
+    let optionsHTML = "";
     question.options.forEach(function(option, index) {
         optionsHTML += "<input class=\"form-check-input\" type='radio' name='answer' value='" + option + "' id='option" + index + "'>";
         optionsHTML += "<label class=\"form-check-label\" for='option" + index + "'>" + option + "</label><br>";
@@ -49,7 +49,7 @@ function displayQuestion() {
 }
 
 function checkAnswer() {
-    var selectedOption = document.querySelector("input[name='answer']:checked");
+    let selectedOption = document.querySelector("input[name='answer']:checked");
     if (selectedOption) {
         if (selectedOption.value === quizData[currentQuestion].answer) {
             score++;
@@ -64,7 +64,7 @@ function checkAnswer() {
 }
 
 function displayResult() {
-    var quizContainer = document.getElementById("quiz-container");
+    let quizContainer = document.getElementById("quiz-container");
     quizContainer.innerHTML = "<h2>Quiz Complete!</h2>";
     if (score >= 5) {
         quizContainer.innerHTML += "<h3>Your score: " + score + "/" + quizData.length + "</h3>";

@@ -13,9 +13,9 @@ function displayPrice(count, time, type) {
 }
 
 function calculatePrice(count, type) {
-    if (type.toLowerCase() == "standard") {
+    if (type.toLowerCase() === "standard") {
         return count * 800;
-    } else if (type.toLowerCase() == "premium") {
+    } else if (type.toLowerCase() === "premium") {
         return count * 1500;
     } else {
         return count * 3000;
