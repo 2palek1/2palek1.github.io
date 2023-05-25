@@ -1,0 +1,73 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: white;
+}
+
+
+/*CSS FOR BOOTSTRAP ELEMENTS*/
+.container h2{
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.navbar {
+    padding: 0!important;
+    width: 100%;
+    margin-bottom: 70px!important;
+}
+
+
+/*CSS FOR BOOTSTRAP ELEMENTS*/
+.poster {
+    max-width: 25%;
+    margin-left: 50%;
+    margin-top: -19%;
+}
+
+.top {
+    height: 880px;
+    width: 100%;
+}
+
+
+/*CAROUSEL MAIN PAGE*/
+.carousel-inner {
+    height: 0;
+    padding-bottom: 60%; /* this sets carousel aspect ratio (4:1 here) */
+}
+
+.carousel-item {
+    position: absolute !important; /* Bootstrap is insistent */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-item img {
+    height: 100%; /* Bootstrap handles width already */
+    object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+}
+
+
+/*INFO MAIN PAGE*/
+.content p {
+    margin-bottom: 50px;
+}
+
+
+/* CAST PAGE CARDS */
+.actors {
+    margin-top: 50px;
+}
+
+
+#loading-circle {
+    display: none;
+    /* Add styles for your loading circle, e.g., width, height, animation */
+}
