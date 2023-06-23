@@ -8,13 +8,18 @@ function randomСharacter() {
     { name: 'Cameron Winklevoss', image: 'images/tyler.jpg' },
     { name: 'Divya Narendra', image: 'images/diy.webp' },
     { name: 'Erica Albright', image: 'images/ex.png' },
-    { name: 'Chewing Capybara', image: 'https://media.tenor.com/hX9renH-K_YAAAAC/capibara.gif' },
+    {
+      name: 'Chewing Capybara',
+      image: 'https://media.tenor.com/hX9renH-K_YAAAAC/capibara.gif',
+    },
   ];
 
   const randomIndex = Math.floor(Math.random() * characters.length);
   const randomCharacter = characters[randomIndex];
 
-  document.getElementById('character').innerHTML = `You are ${randomCharacter.name}`;
+  document.getElementById(
+    'character',
+  ).innerHTML = `You are ${randomCharacter.name}`;
   document.getElementById('character-image').src = randomCharacter.image;
 }
 
