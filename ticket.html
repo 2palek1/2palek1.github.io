@@ -61,83 +61,96 @@
     </section>
 
 <section class="tickets centered">
-    <div class="container-fluid">
-        <div class="container">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="firstname">First name</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="First name">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="lastname">Last name</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="cinema">Cinema</label>
-                        <select id="cinema" class="form-control">
-                            <option selected>Chaplin Mega Silk Way</option>
-                            <option>Chaplin Khan-Shatyr</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="ticket-type">Type</label>
-                        <select id="ticket-type" class="form-control">
-                            <option selected>Standard</option>
-                            <option>Premium</option>
-                            <option>VIP</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="time">Time</label>
-                        <select id="time" class="form-control">
-                            <option selected>10:00</option>
-                            <option>15:00</option>
-                            <option>20:00</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="count">Count</label>
-                            <input type="number" class="form-control" id="count">
+    <div class="container py-3">
+        <div class="row">
+            <div class="mx-auto col-sm-6">
+                        <!-- form user info -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-0">User Information</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="form" role="form" autocomplete="off">
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="firstname">First name</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="text" id="firstname" placeholder="Firstname" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="lastname">Last name</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="text" id="lastname" placeholder="Lastname" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="inputEmail4">Email</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="email" id="inputEmail4" placeholder="example@gmail.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="cinema">Cinema</label>
+                                        <div class="col-lg-9">
+                                            <select id="cinema" class="form-control" size="0" required>
+                                                <option>Chaplin Khan Shatyr</option>
+                                                <option>Chaplin Mega Silkway</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="ticket-type">Type</label>
+                                        <div class="col-lg-9">
+                                            <select id="ticket-type" class="form-control" size="0" required>
+                                                <option>Standard</option>
+                                                <option>Premium</option>
+                                                <option>VIP</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="time">Time</label>
+                                        <div class="col-lg-9">
+                                            <select id="time" class="form-control" size="0" required>
+                                                <option>10:00</option>
+                                                <option>15:00</option>
+                                                <option>21:00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label" for="count">Count</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="number" id="count" value="" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label"></label>
+                                        <div class="col-lg-9">
+                                            <button type="button" class="btn btn-primary" onclick="getPrice()">Buy</button>
+                                        </div>
+                                    </div>
+                                    <div id="ticket-container"></div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <button type="button" class="btn btn-primary" onclick="getPrice()">Buy</button>
-                    </div>
-                </div>
-            </form>
-            <div id="ticket-container">
-
+                        <!-- /form user info -->
             </div>
         </div>
     </div>
 
 
+
+
 </section>
 
-<section class="footer">
-    <div class="mt-5 p-4 bg-dark text-white text-center fixed-bottom">
-        <p>Assignment X, 2023</p>
-        <p>Alimzhanova Aigerim, Ashimov Askhat, Berikkhan Inkarim, Tusbayeva Nurilla</p>
+<section class="footer-page">
+    <div class="mt-5 p-4 bg-dark text-white text-center fixed-bottom" style="background-color: #0165E1 !important;">
+        <h5>Final Exam, Web-Technologies</h5>
+        <h6>Alimzhanova Aigerim, Ashimov Askhat, Berikkhan Inkarim, Tusbayeva Nurilla</h6>
     </div>
-</section>
+</section> 
+
 
 </body>
 </html>

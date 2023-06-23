@@ -480,3 +480,22 @@ footer button.show {
   color: #fff;
   background: #007bff;
 }
+
+.top-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.top-card {
+  width: 18rem;
+  padding: 5px;
+}
+
+.big-title {
+  font-size: 80px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: whitesmoke;
+}
