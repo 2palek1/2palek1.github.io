@@ -1,90 +1,145 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz</title>
-  <script src="scripts/quiz.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-          crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-          integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-          crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-<section class="navbar" style="padding: 0; margin-bottom: 60px">
-  <div class="container" style="max-width: 100%; padding: 0;">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" style="width:40px;" fill="blue"
-               viewBox=" 0 0 512 512">
-            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
-          </svg>
-        </a>
-        <a class="navbar-brand" href="index.html">The Social Network</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                 aria-expanded="false">
-                Wiki
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="plot.html">Plot</a>
-                <a class="dropdown-item" href="cast.html">Cast</a>
-                <a class="dropdown-item" href="awards.html">Awards</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="game.html">Game</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ticket.html">Tickets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="rewiev.html">Reviews</a>
-            </li>
-          </ul>
+    <section class="navbar" style="padding: 0">
+        <div class="container" style="max-width: 100%; padding: 0;">
+            <nav class="navbar navbar-expand-sm bg-white fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width:40px;" fill="blue" viewBox=" 0 0 512 512">
+                            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                    </a>
+                    <a class="navbar-brand" href="index.html">The Social Network</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wiki
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="plot.html">Plot</a>
+                                    <a class="dropdown-item" href="cast.html">Cast</a>
+                                    <a class="dropdown-item" href="awards.html">Awards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game.html">Game</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quiz.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ticket.html">Tickets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="rewiev.html">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </nav>
-  </div>
-</section>
+    </section>
 
-<section class="quiz text-center">
-  <div id="quiz-container">
-    <h1>Quiz</h1>
-    <h3 id="question-number"></h3>
-    <h2 id="question"></h2>
-    <p id="options"></p>
-    <button class="btn btn-primary" onclick="checkAnswer()">Next</button>
-  </div>
 
-  <script>
-    displayQuestion();
-  </script>
-</section>
+    <!-- start Quiz button -->
+    
+    <div class="start_btn"><button>Start Quiz</button></div>
 
-<section class="footer">
-  <div class="mt-5 p-4 bg-dark text-white text-center fixed-bottom">
-    <p>Assignment 3, 2023</p>
-    <p>Alimzhanova Aigerim, Ashimov Askhat, Berikkhan Inkarim, Tusbayeva Nurilla</p>
-  </div>
-</section>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section style="padding: 25px 30px 20px 30px;
+        background: #fff;">
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="scripts/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="scripts/quizScript.js"></script>
+
+
 
 </body>
+</html>
 </html>
