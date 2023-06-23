@@ -1,176 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="dist/bundle.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-            crossorigin="anonymous"></script>
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body class="body">
-<section class="navbar" style="padding: 0">
-    <div class="container" style="max-width: 100%; padding: 0;">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="width:40px;" fill="blue"
-                         viewBox=" 0 0 512 512">
-                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
-                    </svg>
-                </a>
-                <a class="navbar-brand" href="index.html">The Social Network</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                               aria-expanded="false">
-                                Wiki
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="plot.html">Plot</a>
-                                <a class="dropdown-item" href="cast.html">Cast</a>
-                                <a class="dropdown-item" href="awards.html">Awards</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+    <section class="navbar" style="padding: 0">
+        <div class="container" style="max-width: 100%; padding: 0;">
+            <nav class="navbar navbar-expand-sm bg-white fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width:40px;" fill="blue" viewBox=" 0 0 512 512">
+                            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                    </a>
+                    <a class="navbar-brand" href="index.html">The Social Network</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wiki
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="plot.html">Plot</a>
+                                    <a class="dropdown-item" href="cast.html">Cast</a>
+                                    <a class="dropdown-item" href="awards.html">Awards</a>
+                                    <a class="dropdown-item" href="rewiev.html">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game.html">Game</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quiz.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ticket.html">Tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="top" style="margin-top: 25px;">
+        <div class="bg">
+            <div class="container">
+                <div class="top-card">
+                <div class="card" style="width: 18rem;">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img src="images/poster.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-2">
+                                <h3 class="card-title" style="font-weight: bold;">The Social Network</h3>
+                                <h5 class="card-title">2010, drama, biography</h5>
+                                <p class="card-text">A Harvard student has an idea that promises millions of dollars. The history of the creation of Facebook by David Fincher</p>
+                                <a href="https://hd.kinopoisk.ru/film/4613c8fa154bdf6696420feed1b1af84?content_tab=overview" class="btn btn-primary" role="button">Watch Now</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="game.html">Game</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quiz.html">Quiz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ticket.html">Tickets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="rewiev.html">Reviews</a>
-                        </li>
-                    </ul>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </div>
-</section>
+            
+        <!-- <img src="images/poster.jpeg" alt="poster" class="poster"> -->
+    </section>
 
-<section class="top" style="margin-top: 30px;">
-    <div class="container">
-        <div class="card" style="width: 18rem; margin-top: 20%; margin-left: 15%">
-            <div class="card-body">
-                <h5 class="card-title">The Social Networkrzrez</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">2010, drama, biography</h6>
-                <p class="card-text">A Harvard student has an idea that promises millions of dollars. The history of the
-                    creation of Facebook by David Fincher</p>
-                <a href="https://hd.kinopoisk.ru/film/4613c8fa154bdf6696420feed1b1af84?content_tab=overview"
-                   class="btn btn-info" role="button">Watch Now</a>
+
+    <section class="carousel">
+        <div class="container" style="max-height: 60%; margin-top: 5%;">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjI1Mjg5NDIyOF5BMl5BanBnXkFtZTcwMTc0NTE5Mw@@._V1_SY200_CR55"
+                            alt="image" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/a8/30/c9/a830c9f14e3ab75d914aed5eb6e946e3.jpg"
+                            alt="image" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.nme.com/wp-content/uploads/2020/04/H687YD.jpg" alt="image"
+                            class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
-    </div>
-
-    <img src="images/poster.jpeg" alt="poster" class="poster">
-</section>
+    </section>
 
 
-<section class="carousel">
-    <div class="container" style="max-height: 60%; margin-top: -10%;">
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <section class="content">
+        <div class="container">
+            <h2 class="card-title">The Social Network</h2>
+            <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">The Social Network is a 2010
+                American biographical drama film directed by David Fincher and written by Aaron
+                Sorkin, based on the 2009 book The Accidental Billionaires by Ben Mezrich. It portrays the founding of
+                social
+                networking website Facebook. It stars Jesse Eisenberg as Facebook founder Mark Zuckerberg, with Andrew
+                Garfield
+                as Eduardo Saverin, Justin Timberlake as Sean Parker, Armie Hammer as Cameron and Tyler Winklevoss, and
+                Max
+                Minghella as Divya Narendra. Neither Zuckerberg nor any other Facebook staff were involved with the
+                project,
+                although Saverin was a consultant for Mezrich's book.</p>
+            <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">Production began when Sorkin
+                signed to write it. Principal photography began that same year in October in
+                Cambridge, Massachusetts, and lasted until November. Additional scenes were shot in California, in the
+                cities of Los Angeles and Pasadena. Trent Reznor and Atticus Ross of Nine Inch Nails composed the film's
+                score, which was released on September 28, 2010.
+            </p>
 
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
-
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMjI1Mjg5NDIyOF5BMl5BanBnXkFtZTcwMTc0NTE5Mw@@._V1_SY200_CR55"
-                         alt="image" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.pinimg.com/originals/a8/30/c9/a830c9f14e3ab75d914aed5eb6e946e3.jpg" alt="image"
-                         class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.nme.com/wp-content/uploads/2020/04/H687YD.jpg" alt="image"
-                         class="d-block w-100">
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">
+                The film premiered at the New York Film Festival on September 24, 2010, and was released theatrically in
+                the
+                United States on October 1, by Sony Pictures Releasing. A major critical and commercial success, the
+                film
+                grossed $224 million on a $40 million budget and was widely acclaimed by critics. It was named one of
+                the
+                best films of the year by 78 critics, and named the best by 22 critics, the most of any film that year.
+                It
+                was also chosen by the National Board of Review as the best film of 2010. At the 83rd Academy Awards, it
+                received eight nominations, including for Best Picture, Best Director, and Best Actor for Eisenberg, and
+                won
+                for Best Adapted Screenplay, Best Original Score, and Best Film Editing. It also received awards for
+                Best
+                Motion Picture – Drama, Best Director, Best Screenplay, and Best Original Score at the 68th Golden Globe
+                Awards.
+            </p>
+            <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">
+                The Social Network has maintained a strong reputation since its initial release, and is commonly cited
+                by
+                critics as one of the best films of the 2010s and 21st century. The Writers Guild of America
+                ranked Sorkin's screenplay the third greatest of the 21st century. While no official sequel has been
+                announced, Sorkin has publicly expressed interest and willingness to write a screenplay for one should
+                Fincher return to direct.</p>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="content">
-    <div class="container">
-        <h2 class="card-title">The Social Network</h2>
-        <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">The Social Network is a 2010
-            American biographical drama film directed by David Fincher and written by Aaron
-            Sorkin, based on the 2009 book The Accidental Billionaires by Ben Mezrich. It portrays the founding of
-            social
-            networking website Facebook. It stars Jesse Eisenberg as Facebook founder Mark Zuckerberg, with Andrew
-            Garfield
-            as Eduardo Saverin, Justin Timberlake as Sean Parker, Armie Hammer as Cameron and Tyler Winklevoss, and Max
-            Minghella as Divya Narendra. Neither Zuckerberg nor any other Facebook staff were involved with the project,
-            although Saverin was a consultant for Mezrich's book.</p>
-        <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">Production began when Sorkin
-            signed to write it. Principal photography began that same year in October in
-            Cambridge, Massachusetts, and lasted until November. Additional scenes were shot in California, in the
-            cities of Los Angeles and Pasadena. Trent Reznor and Atticus Ross of Nine Inch Nails composed the film's
-            score, which was released on September 28, 2010.
-        </p>
-
-        <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">
-            The film premiered at the New York Film Festival on September 24, 2010, and was released theatrically in the
-            United States on October 1, by Sony Pictures Releasing. A major critical and commercial success, the film
-            grossed $224 million on a $40 million budget and was widely acclaimed by critics. It was named one of the
-            best films of the year by 78 critics, and named the best by 22 critics, the most of any film that year. It
-            was also chosen by the National Board of Review as the best film of 2010. At the 83rd Academy Awards, it
-            received eight nominations, including for Best Picture, Best Director, and Best Actor for Eisenberg, and won
-            for Best Adapted Screenplay, Best Original Score, and Best Film Editing. It also received awards for Best
-            Motion Picture – Drama, Best Director, Best Screenplay, and Best Original Score at the 68th Golden Globe
-            Awards.
-        </p>
-        <p class="mb-2 text-body-secondary" style="font-size: 20px;margin-top: 20px;">
-            The Social Network has maintained a strong reputation since its initial release, and is commonly cited by
-            critics as one of the best films of the 2010s and 21st century. The Writers Guild of America
-            ranked Sorkin's screenplay the third greatest of the 21st century. While no official sequel has been
-            announced, Sorkin has publicly expressed interest and willingness to write a screenplay for one should
-            Fincher return to direct.</p>
-    </div>
-</section>
-
-
-<section class="footer">
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-        <p>Assignment 3, 2023</p>
-        <p>Alimzhanova Aigerim, Ashimov Askhat, Berikkhan Inkarim, Tusbayeva Nurilla</p>
-    </div>
-</section>
+    <section class="footer-page">
+        <div class="mt-5 p-4 bg-dark text-white text-center" style="background-color: #0165E1 !important;">
+            <h5>Final Exam, Web-Technologies</h5>
+            <h6>Alimzhanova Aigerim, Ashimov Askhat, Berikkhan Inkarim, Tusbayeva Nurilla</h6>
+        </div>
+    </section>    
 
 
 </body>
+
 </html>
